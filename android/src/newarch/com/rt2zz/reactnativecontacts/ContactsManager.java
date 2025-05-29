@@ -222,7 +222,53 @@ public class ContactsManager extends NativeContactsSpec implements ActivityEvent
         // this method is only needed for iOS
     }
 
+    @Override
+    public void removeContactsFromGroup(String groupId, ReadableArray contactIds, Promise promise) {
+        Log.w("ContactsManager", "Group operations are not implemented");
+        promise.reject("NOT_IMPLEMENTED", "Group operations are not supported");
+    }
 
+    @Override
+    public void addContactsToGroup(String groupId, ReadableArray contactIds, Promise promise) {
+        Log.w("ContactsManager", "Group operations are not implemented");
+        promise.reject("NOT_IMPLEMENTED", "Group operations are not supported");
+    }
+
+    @Override
+    public void contactsInGroup(String groupId, Promise promise) {
+        Log.w("ContactsManager", "Group operations are not implemented");
+        promise.reject("NOT_IMPLEMENTED", "Group operations are not supported");
+    }
+
+    @Override
+    public void addGroup(ReadableMap group, Promise promise) {
+        Log.w("ContactsManager", "Group operations are not implemented");
+        promise.reject("NOT_IMPLEMENTED", "Group operations are not supported");
+    }
+
+    @Override
+    public void updateGroup(String groupId, ReadableMap group, Promise promise) {
+        Log.w("ContactsManager", "Group operations are not implemented");
+        promise.reject("NOT_IMPLEMENTED", "Group operations are not supported");
+    }
+
+    @Override
+    public void deleteGroup(String groupId, Promise promise) {
+        Log.w("ContactsManager", "Group operations are not implemented");
+        promise.reject("NOT_IMPLEMENTED", "Group operations are not supported");
+    }
+
+    @Override
+    public void getGroups(Promise promise) {
+        Log.w("ContactsManager", "Group operations are not implemented");
+        promise.reject("NOT_IMPLEMENTED", "Group operations are not supported");
+    }
+
+    @Override
+    public void getGroup(String groupId, Promise promise) {
+        Log.w("ContactsManager", "Group operations are not implemented");
+        promise.reject("NOT_IMPLEMENTED", "Group operations are not supported");
+    }
     /*
     protected static void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
             @NonNull int[] grantResults) {
